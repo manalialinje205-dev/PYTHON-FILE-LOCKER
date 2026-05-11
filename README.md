@@ -1,3 +1,6 @@
+PYTHON FILE LOCKER 
+
+
 Project Overview
 
 This Python File Locker is a lightweight security utility designed to protect sensitive data through AES-based symmetric encryption. It utilizes the cryptography library's Fernet implementation to ensure that files are encrypted with a high standard of security, making them inaccessible without the unique master key.
