@@ -44,7 +44,7 @@ def process_file(filename, key, mode):
             file.write(processed_data)
         
         print(f"\n SUCCESS: '{os.path.basename(filename)}' has been {action}.")
-        time.sleep(2) # Give user time to read the result
+        time.sleep(2) 
     except Exception as e:
         print(f"\n ERROR: Could not {mode} the file. (Invalid key or file corrupted)")
         time.sleep(2)
@@ -55,7 +55,6 @@ def main():
     
     key = load_key()
 
-    # The while loop keeps the program alive until Choice 3 is picked
     while True:
         print("\n" + "="*30)
         print("FILE LOCKER MENU")
@@ -69,7 +68,7 @@ def main():
 
         if choice == '3':
             print("\n Closing File Locker. Stay safe!")
-            break # Breaks the loop and exits the script
+            break 
 
         if choice in ['1', '2']:
             print("\n Please select a file in the popup window...")
